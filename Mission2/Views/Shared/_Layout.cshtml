@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/img/icon.png" type="image/x-icon">
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm" style="background-color: steelblue;">
+        <h1 class="navbar-brand" style="padding-left: 5rem; padding-top: 1rem; font-size: 32px; color: white;">Mission 3</h1>
+
+        <div class="navbar-nav ms-auto">
+            <a asp-controller="SubFolder" asp-action="Index" class="text-end nav-item" style="color: white; padding: 10px; font-size: 20px;">Home</a>
+            <a asp-controller="SubFolder" asp-action="Calculator" class="text-end nav-item" style="color: white; padding: 10px; padding-right: 5rem; font-size: 20px;">Grade Calculator</a>
+        </div>
+
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/js/mission2.js"></script>
+
+</body>
+</html>
